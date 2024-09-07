@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/card-escolha.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+.identificar{
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.img-identifar{
+    display: flex;
+    gap: 90px;
+   
+}
+.img-escudos{
+    display: flex;
+    width: auto;
+    height: 200px; 
+    max-height: 200px; 
+    gap: 35px;
+    object-fit: contain; 
+    margin-top: 25px;
+}
+.img-identifar p{
+    color: rgb(0, 0, 0);
+    font-size: 18px; 
+    line-height: 1.5; 
+    margin: 0;
+    word-wrap: break-word; 
+}
+
+@media screen and (max-width:800px) {
+    .img-identifar p{
+        color: rgb(0, 0, 0);
+        font-size: 16px; 
+        padding: 15px;
+        line-height: 1.5; 
+        margin: 0;
+        word-wrap: break-word; 
+}
+.img-identifar{
+    flex-wrap: wrap;
+    gap: 30px;
+   
+}
+
+.identificar h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="/tela-inicio/img/logo-riversul.png" alt="Logo" class="logo">
+            <span class="nome-logo">Riversul</span>
+        </div>
+        <ul class="itens-nav-bar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Oque Voce quer Fazer</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="navbar-right">
+            <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+        </div>
+        <div class="hamburger-menu" onclick="toggleDrawer()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="aba-azul" id="drawer">
+        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+        <a href="#home">Inicio</a>
+        <a href="#services">Oque Voce quer Fazer</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+        <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+    </div>
+
+    
+
+    <div class="container-escolha">
+        <div class="titulo">
+            <h2>Novo pedido ou manifestação</h2>
+            <p><span>Tipo:</span> Selecione pedido de acesso a informação ou tipo de manifestação</p>
+        </div>
+        <div class="geral-card">
+            <div class="card">
+                <img aria-hidden="true" alt="Elogio" src="https://openui.fly.dev/openui/24x24.svg?text=👍" />
+                <span class="card-primary">Elogio</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Sugestão" src="https://openui.fly.dev/openui/24x24.svg?text=💬" />
+                <span class="card-secondary">Sugestão</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Reclamação" src="https://openui.fly.dev/openui/24x24.svg?text=⚠️" />
+                <span class="card-destructive">Reclamação</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Denuncia" src="https://openui.fly.dev/openui/24x24.svg?text=📢" />
+                <span class="card-accent">Denuncia</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Solicitação" src="https://openui.fly.dev/openui/24x24.svg?text=🗣️" />
+                <span class="card-muted">Solicitação</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="identificar">
+        <h1>Gostaria de se identificar?</h1>
+        <div class="img-identifar">
+            <div class="img-escudos">
+                <img src="img/escudo-identificador.png" alt="">
+                <img src="img/escudo-anonimo.png" alt="">
+            </div>
+            <p>Lembre-se: a escolha entre denunúncia anonima ou identificada é totalmente sua. Sua segurança e privacidade são nossas prioridades</p>
+        </div>
+      
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Ouvidoria</h2>
+            <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
+            <ul>
+                <li><strong>Email:</strong> DevintorsDigital@exemplo.com</li>
+                <li><strong>Telefone:</strong> (15) 1234-5678</li>
+                <li><strong>Endereço:</strong> Rua Devintors, 123 - Centro, Riversul - SP</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="/tela-inicio/js/navbar.js"></script>
+</body>
+</html>

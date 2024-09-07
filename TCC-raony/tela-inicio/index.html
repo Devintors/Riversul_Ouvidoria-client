@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/card-escolha.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="img/logo-riversul.png" alt="Logo" class="logo">
+            <span class="nome-logo">Riversul</span>
+        </div>
+        <ul class="itens-nav-bar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Oque Voce quer Fazer</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="navbar-right">
+            <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+        </div>
+        <div class="hamburger-menu" onclick="toggleDrawer()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="aba-azul" id="drawer">
+        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+        <a href="#home">Inicio</a>
+        <a href="#services">Oque Voce quer Fazer</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+        <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+    </div>
+
+    <div class="inicio-geral">
+
+        <div class="img-titulo">
+            <h1>OUVIDORIA</h1>
+            <div class="img-ouvidoria">
+                <img src="img/atendente.png" alt="">
+            </div>
+        </div>
+
+        <div class="texto-ouvidoria">
+            <p>No nosso site de ouvidoria, você encontrará um espaço dedicado à escuta ativa e à resolução de problemas. Nossa missão é garantir que sua voz seja ouvida e que suas preocupações sejam tratadas com a máxima seriedade e transparência. Aqui está o que você pode esperar ao usar nossos serviços:</p>
+        </div>
+
+    </div>
+
+    <div class="container-escolha">
+        <div class="titulo">
+            <h2>O QUE VOCÊ QUER FAZER?</h2>
+        </div>
+        <div class="geral-card">
+            <div class="card">
+                <img aria-hidden="true" alt="Elogio" src="https://openui.fly.dev/openui/24x24.svg?text=👍" />
+                <span class="card-primary">Elogio</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Sugestão" src="https://openui.fly.dev/openui/24x24.svg?text=💬" />
+                <span class="card-secondary">Sugestão</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Reclamação" src="https://openui.fly.dev/openui/24x24.svg?text=⚠️" />
+                <span class="card-destructive">Reclamação</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Denuncia" src="https://openui.fly.dev/openui/24x24.svg?text=📢" />
+                <span class="card-accent">Denuncia</span>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" alt="Solicitação" src="https://openui.fly.dev/openui/24x24.svg?text=🗣️" />
+                <span class="card-muted">Solicitação</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Ouvidoria</h2>
+            <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
+            <ul>
+                <li><strong>Email:</strong> DevintorsDigital@exemplo.com</li>
+                <li><strong>Telefone:</strong> (15) 1234-5678</li>
+                <li><strong>Endereço:</strong> Rua Devintors, 123 - Centro, Riversul - SP</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleDrawer() {
+    var drawer = document.getElementById('drawer');
+    drawer.classList.toggle('active');
+}
+    </script>
+</body>
+</html>

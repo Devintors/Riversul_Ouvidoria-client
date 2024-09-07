@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/tela-inicio/css/navbar.css">
+    <link rel="stylesheet" href="/tela-inicio/css/footer.css">
+    <!-- Link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    padding-left: 100px;
+    margin-top: 20px;
+}
+
+.blue-div {
+    width: 5px;
+    height: 30px;
+    background-color: blue;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-content {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .blue-div {
+    width: 5px;
+    height: 25px;
+    background-color: blue;
+    margin-right: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text-content {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="/tela-inicio/img/logo-riversul.png" alt="Logo" class="logo">
+            <span class="nome-logo">Riversul</span>
+        </div>
+        <ul class="itens-nav-bar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Oque Voce quer Fazer</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="navbar-right">
+            <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+        </div>
+        <div class="hamburger-menu" onclick="toggleDrawer()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="aba-azul" id="drawer">
+        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+        <a href="#home">Inicio</a>
+        <a href="#services">Oque Voce quer Fazer</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+        <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="blue-div"></div>
+        <div class="title">Título do Projeto</div>
+    </div>
+    
+    <hr style="border: 1px solid #828282; margin-top: 20px; width: 100%; ">
+
+
+    <div class="text-content">
+        <p>
+            Este é um parágrafo de exemplo para descrever o projeto. Ele é escrito para se ajustar à largura da tela, 
+            garantindo uma leitura confortável, independente do dispositivo. O design responsivo garante que as informações 
+            sejam apresentadas de maneira clara, com alinhamento justificado e espaçamento adequado. Isso proporciona uma 
+            experiência de usuário agradável, permitindo que o conteúdo flua naturalmente ao longo da página. Assim, o texto 
+            se adapta conforme a largura da tela, sem comprometer a qualidade visual ou a legibilidade.
+            Este é um parágrafo de exemplo para descrever o projeto. Ele é escrito para se ajustar à largura da tela, 
+            garantindo uma leitura confortável, independente do dispositivo. O design responsivo garante que as informações 
+            sejam apresentadas de maneira clara, com alinhamento justificado e espaçamento adequado. Isso proporciona uma 
+            experiência de usuário agradável, permitindo que o conteúdo flua naturalmente ao longo da página. Assim, o texto 
+            se adapta conforme a largura da tela, sem comprometer a qualidade visual ou a legibilidade.
+        </p>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Ouvidoria</h2>
+            <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
+            <ul>
+                <li><strong>Email:</strong> DevintorsDigital@exemplo.com</li>
+                <li><strong>Telefone:</strong> (15) 1234-5678</li>
+                <li><strong>Endereço:</strong> Rua Devintors, 123 - Centro, Riversul - SP</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  
+    <script src="/tela-inicio/js/navbar.js"></script>
+</body>
+
+</html>
