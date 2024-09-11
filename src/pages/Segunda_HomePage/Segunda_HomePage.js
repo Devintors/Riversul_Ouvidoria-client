@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 import "./style.css";
 
 import Escudo_Identificador from "../../img/escudo-identificador.png";
 import Escudo_Anonimo from "../../img/escudo-anonimo.png";
 
 export default function Segunda_HomePage() {
+  const Navegar = useNavigate();
   return (
     <div className="Corpo_Site">
       <div className="container-escolha">
@@ -61,8 +64,20 @@ export default function Segunda_HomePage() {
         <h1>Gostaria de se identificar?</h1>
         <div className="img-identifar">
           <div className="img-escudos">
-            <img src={Escudo_Identificador} alt="" />
-            <img src={Escudo_Anonimo} alt="" />
+            <img
+              src={Escudo_Identificador}
+              alt=""
+              onClick={() => {
+                Navegar("/Denuncias");
+              }}
+            />
+            <img
+              src={Escudo_Anonimo}
+              alt=""
+              onClick={() => {
+                Navegar("/Denuncias");
+              }}
+            />
           </div>
           <p>
             Lembre-se: a escolha entre denunúncia anonima ou identificada é

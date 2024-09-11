@@ -35,7 +35,7 @@ export default function HomePage() {
           <div
             className="card"
             onClick={() => {
-              Navegar("/Denuncias");
+              Navegar("/Segunda");
             }}
           >
             <img
@@ -48,7 +48,7 @@ export default function HomePage() {
           <div
             className="card"
             onClick={() => {
-              Navegar("/Denuncias");
+              Navegar("/Segunda");
             }}
           >
             <img
@@ -61,7 +61,7 @@ export default function HomePage() {
           <div
             className="card"
             onClick={() => {
-              Navegar("/Denuncias");
+              Navegar("/Segunda");
             }}
           >
             <img
@@ -74,7 +74,7 @@ export default function HomePage() {
           <div
             className="card"
             onClick={() => {
-              Navegar("/Denuncias");
+              Navegar("/Segunda");
             }}
           >
             <img
@@ -87,7 +87,7 @@ export default function HomePage() {
           <div
             className="card"
             onClick={() => {
-              Navegar("/Denuncias");
+              Navegar("/Segunda");
             }}
           >
             <img
