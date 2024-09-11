@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 import "./style.css";
 
 import Atendente from "../../img/Atendente.png";
 
 export default function HomePage() {
+  const Navegar = useNavigate();
   return (
     <div className="Corpo_Site ">
       <div className="inicio-geral">
@@ -29,7 +32,12 @@ export default function HomePage() {
           <h2>O QUE VOCÊ QUER FAZER?</h2>
         </div>
         <div className="geral-card">
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => {
+              Navegar("/Denuncias");
+            }}
+          >
             <img
               aria-hidden="true"
               alt="Elogio"
@@ -37,7 +45,12 @@ export default function HomePage() {
             />
             <span className="card-primary">Elogio</span>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => {
+              Navegar("/Denuncias");
+            }}
+          >
             <img
               aria-hidden="true"
               alt="Sugestão"
@@ -45,7 +58,12 @@ export default function HomePage() {
             />
             <span className="card-secondary">Sugestão</span>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => {
+              Navegar("/Denuncias");
+            }}
+          >
             <img
               aria-hidden="true"
               alt="Reclamação"
@@ -53,7 +71,12 @@ export default function HomePage() {
             />
             <span className="card-destructive">Reclamação</span>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => {
+              Navegar("/Denuncias");
+            }}
+          >
             <img
               aria-hidden="true"
               alt="Denuncia"
@@ -61,7 +84,12 @@ export default function HomePage() {
             />
             <span className="card-accent">Denuncia</span>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            onClick={() => {
+              Navegar("/Denuncias");
+            }}
+          >
             <img
               aria-hidden="true"
               alt="Solicitação"
