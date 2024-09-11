@@ -1,249 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/tela-inicio/css/navbar.css">
-    <link rel="stylesheet" href="/tela-inicio/css/footer.css">
+    <link rel="stylesheet" href="/tela-inicio/css/navbar.css" />
+    <link rel="stylesheet" href="/tela-inicio/css/footer.css" />
     <!-- Link do Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
-     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-body {
+      body {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+      }
 
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
-}
+      .login-container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 370px;
+        width: 100%;
+      }
 
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+      }
 
-.login-container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 370px;
-    width: 100%;
-}
+      .login-text {
+        font-size: 0.9rem;
+        color: #838282;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      span {
+        color: #007bff;
+        font-size: 0.8rem;
+      }
 
-h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
+      .login-form label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: #636363;
+        font-weight: 600;
+      }
 
-.login-text {
-    font-size: 0.9rem;
-    color: #838282;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-span{
-    color: #007BFF;
-    font-size: 0.8rem;
-}
+      .login-form input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        background: #edecec97;
+      }
 
-.login-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 1.0rem;
-    color: #636363;
-    font-weight: 600;
-}
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-.login-form input {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    background: #edecec97;
-}
+      .login-button {
+        padding: 10px 50px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+      }
 
-.form-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+      .google-button {
+        border: 1px solid rgb(151, 151, 151);
+        background-color: transparent;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 40px;
+      }
+      .ou {
+        font-size: 18px;
+        font-weight: 700;
+        color: #7d7d7d;
+      }
 
-.login-button {
-    padding: 10px 50px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-}
+      .google-button img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-top: 1px;
+      }
 
-.google-button {
-    border: 1px solid rgb(151, 151, 151);
-    background-color: transparent;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border-radius: 40px;
+      .login-button:hover {
+        background-color: #0056b3;
+      }
 
-}
-.ou{
-    font-size: 18px;
-    font-weight: 700;
-    color: #7d7d7d;
-}
+      .login-container-2 {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 370px;
+        width: 100%;
+      }
+      .login-container,
+      .login-container-2 {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
 
-.google-button img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    margin-top: 1px;
-}
+      .login-container-2 {
+        display: none;
+      }
 
-.login-button:hover {
-    background-color: #0056b3;
-}
-
-.login-container-2{
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 370px;
-    width: 100%;
-}
-.login-container, .login-container-2{
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.login-container-2 {
-    display: none;
-}
-
-@media screen and (max-width:700px) {
-    
-
-.login-geral{
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
-}
+      @media screen and (max-width: 700px) {
+        .login-geral {
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          display: flex;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-left">
-            <img src="/tela-inicio/img/logo-riversul.png" alt="Logo" class="logo">
-            <span class="nome-logo">Riversul</span>
-        </div>
-        <ul class="itens-nav-bar">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#services">Oque Voce quer Fazer</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-        <div class="navbar-right">
-            <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
-        </div>
-        <div class="hamburger-menu" onclick="toggleDrawer()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+      <div class="navbar-left">
+        <img src="/tela-inicio/img/logo-riversul.png" alt="Logo" class="logo" />
+        <span class="nome-logo">Riversul</span>
+      </div>
+      <ul class="itens-nav-bar">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#services">Oque Voce quer Fazer</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div class="navbar-right">
+        <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+      </div>
+      <div class="hamburger-menu" onclick="toggleDrawer()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
     <div class="aba-azul" id="drawer">
-        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
-        <a href="#home">Inicio</a>
-        <a href="#services">Oque Voce quer Fazer</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
-        <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
+      <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+      <a href="#home">Inicio</a>
+      <a href="#services">Oque Voce quer Fazer</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+      <button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button>
     </div>
-<div class="login-geral">
-    <div class="login-container">
+    <div class="login-geral">
+      <div class="login-container">
         <h1>Registrar-se</h1>
         <p class="login-text">Já tem uma conta? <span class="toggle-to-login">Faça login</span></p>
-        
-        <form class="login-form">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Digite seu email" required>
-            
-            <label for="confirm-email">Confirme seu Email</label>
-            <input type="email" id="confirm-email" placeholder="Confirme seu email" required>
-            
-            <label for="password">Escolha uma senha</label>
-            <input type="password" id="password" placeholder="Digite sua senha" required>
-            
-            <div class="form-actions">
-                <button type="submit" class="login-button">Cadastrar</button>
-                <p class="ou">ou</p>
-                <button class="google-button">
-                    <img src="google-icon.png" alt="Google Login">
-                </button>
-            </div>
-        </form>
-    </div>
-    
-    <div class="login-container-2" style="display: none;">
-        <h1>Login</h1>
-        <p class="login-text">Não tem uma conta? <span class="toggle-to-register">Registrar-se</span></p>
-        
-        <form class="login-form">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Digite seu email" required>
-            
-            <label for="password">Senha</label>
-            <input type="password" id="password" placeholder="Digite sua senha" required>
-            
-            <div class="form-actions">
-                <button type="submit" class="login-button">Entrar</button>
-                <p class="ou">ou</p>
-                <button class="google-button">
-                    <img src="google-icon.png" alt="Google Login">
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
 
+        <form class="login-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" required />
+
+          <label for="confirm-email">Confirme seu Email</label>
+          <input type="email" id="confirm-email" placeholder="Confirme seu email" required />
+
+          <label for="password">Escolha uma senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" required />
+
+          <div class="form-actions">
+            <button type="submit" class="login-button">Cadastrar</button>
+            <p class="ou">ou</p>
+            <button class="google-button">
+              <img src="google-icon.png" alt="Google Login" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="login-container-2" style="display: none">
+        <h1>Login</h1>
+        <p class="login-text">
+          Não tem uma conta? <span class="toggle-to-register">Registrar-se</span>
+        </p>
+
+        <form class="login-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" required />
+
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" required />
+
+          <div class="form-actions">
+            <button type="submit" class="login-button">Entrar</button>
+            <p class="ou">ou</p>
+            <button class="google-button">
+              <img src="google-icon.png" alt="Google Login" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
-        <div class="footer-content">
-            <h2>Ouvidoria</h2>
-            <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
-            <ul>
-                <li><strong>Email:</strong> DevintorsDigital@exemplo.com</li>
-                <li><strong>Telefone:</strong> (15) 1234-5678</li>
-                <li><strong>Endereço:</strong> Rua Devintors, 123 - Centro, Riversul - SP</li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
-        </div>
+      <div class="footer-content">
+        <h2>Ouvidoria</h2>
+        <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
+        <ul>
+          <li><strong>Email:</strong> DevintorsDigital@exemplo.com</li>
+          <li><strong>Telefone:</strong> (15) 1234-5678</li>
+          <li><strong>Endereço:</strong> Rua Devintors, 123 - Centro, Riversul - SP</li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
+      </div>
     </footer>
-  
+
     <script src="/tela-inicio/js/navbar.js"></script>
     <script>
-        document.querySelector('.toggle-to-login').addEventListener('click', function() {
-    document.querySelector('.login-container').style.display = 'none';
-    document.querySelector('.login-container-2').style.display = 'block';
-});
+      document.querySelector('.toggle-to-login').addEventListener('click', function () {
+        document.querySelector('.login-container').style.display = 'none';
+        document.querySelector('.login-container-2').style.display = 'block';
+      });
 
-document.querySelector('.toggle-to-register').addEventListener('click', function() {
-    document.querySelector('.login-container-2').style.display = 'none';
-    document.querySelector('.login-container').style.display = 'block';
-});
-
+      document.querySelector('.toggle-to-register').addEventListener('click', function () {
+        document.querySelector('.login-container-2').style.display = 'none';
+        document.querySelector('.login-container').style.display = 'block';
+      });
     </script>
-</body>
-
+  </body>
 </html>

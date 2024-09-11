@@ -1,0 +1,51 @@
+.identificar {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.img-identifar {
+  display: flex;
+  gap: 90px;
+}
+.img-escudos {
+  display: flex;
+  width: auto;
+  height: 200px;
+  max-height: 200px;
+  gap: 35px;
+  object-fit: contain;
+  margin-top: 25px;
+}
+.img-identifar p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+  .img-identifar p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 15px;
+    line-height: 1.5;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  .img-identifar {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .identificar h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}

@@ -1,32 +1,18 @@
 import "./style.css";
 
-import Atendente from "../../img/Atendente.png";
+import Escudo_Identificador from "../../img/escudo-identificador.png";
+import Escudo_Anonimo from "../../img/escudo-anonimo.png";
 
-export default function HomePage() {
+export default function Segunda_HomePage() {
   return (
-    <div className="Corpo_Site ">
-      <div className="inicio-geral">
-        <div className="img-titulo">
-          <h1>OUVIDORIA</h1>
-          <div className="img-ouvidoria">
-            <img src={Atendente} alt="" />
-          </div>
-        </div>
-
-        <div className="texto-ouvidoria">
-          <p>
-            No nosso site de ouvidoria, você encontrará um espaço dedicado à
-            escuta ativa e à resolução de problemas. Nossa missão é garantir que
-            sua voz seja ouvida e que suas preocupações sejam tratadas com a
-            máxima seriedade e transparência. Aqui está o que você pode esperar
-            ao usar nossos serviços:
-          </p>
-        </div>
-      </div>
-
+    <div className="Corpo_Site">
       <div className="container-escolha">
         <div className="titulo">
-          <h2>O QUE VOCÊ QUER FAZER?</h2>
+          <h2>Novo pedido ou manifestação</h2>
+          <p>
+            <span>Tipo:</span> Selecione pedido de acesso a informação ou tipo
+            de manifestação
+          </p>
         </div>
         <div className="geral-card">
           <div className="card">
@@ -69,6 +55,19 @@ export default function HomePage() {
             />
             <span className="card-muted">Solicitação</span>
           </div>
+        </div>
+      </div>
+      <div className="identificar">
+        <h1>Gostaria de se identificar?</h1>
+        <div className="img-identifar">
+          <div className="img-escudos">
+            <img src={Escudo_Identificador} alt="" />
+            <img src={Escudo_Anonimo} alt="" />
+          </div>
+          <p>
+            Lembre-se: a escolha entre denunúncia anonima ou identificada é
+            totalmente sua. Sua segurança e privacidade são nossas prioridades
+          </p>
         </div>
       </div>
     </div>

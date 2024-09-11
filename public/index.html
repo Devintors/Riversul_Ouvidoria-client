@@ -4,9 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="" type="image/" />
-    <title>React</title>
+    <title>Riversul Ouvidoria</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div id="Div_Para_Referencia_E_Criacao_React"></div>
+    <div style="height: 100%">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="img/logo-riversul.png" alt="Logo" class="logo" />
+          <span class="nome-logo">Riversul</span>
+        </div>
+        <ul class="itens-nav-bar">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/">Oque Voce quer Fazer</a></li>
+          <li><a href="/Sobre_O_Projeto">Sobre</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+        <div class="navbar-right">
+          <a href="/Login"
+            ><button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button
+          ></a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleDrawer()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <div class="aba-azul" id="drawer">
+        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Oque Voce quer Fazer</a></li>
+        <li><a href="/Sobre_O_Projeto">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+        <a href="/Login"
+          ><button class="login-btn">Entrar <i class="fa-solid fa-circle-user"></i></button
+        ></a>
+      </div>
+      <div id="Div_Para_Referencia_E_Criacao_React"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Ouvidoria</h2>
+        <p>Entre em contato conosco para enviar suas sugestões, reclamações ou dúvidas.</p>
+        <ul>
+          <li><strong>Email:</strong> riversul@riversul.sp.gov.br</li>
+          <li><strong>Telefone:</strong> (15) 3571-1221</li>
+          <li>
+            <strong>Endereço:</strong> Praça Prefeito Aparecido Barbosa, nº130, Centro, Riversul -
+            SP
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 DevintorsDigital. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleDrawer() {
+        var drawer = document.getElementById('drawer');
+        drawer.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
