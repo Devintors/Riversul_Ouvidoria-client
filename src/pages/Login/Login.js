@@ -122,7 +122,10 @@ export default function Login() {
   //#endregion
 
   return (
-    <div className="Corpo_Site">
+    <div
+      className="Corpo_Site"
+      style={{ display: "flex", justifyContent: "center" }}
+    >
       <div className="login-geral">
         <div
           className="login-container"
